@@ -1,9 +1,11 @@
 import React from 'react'
+import Cardbox from '../../components/cardbox/cardbox.jsx'
+import './about.scss'
 
 const About = () => (
 
     <div className='about-Container'>
-        <h2>About Me</h2>
+        <Cardbox />
     </div>
 )
 
