@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './contact-form.scss'
-import FormInput from '../form-input/form-input'
+import FormInput from '../form-input/form-input.jsx'
 
 class Form extends Component {
     constructor(props) {

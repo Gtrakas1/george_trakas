@@ -1,27 +1,12 @@
-.header{
-width: 100%;
-height: 70px;
-display: flex;
-justify-content: space-between;
-margin-bottom: 25px;
-background-color: black;
-
-.name{
-    height: 100%;
-    width: 70px;
-    padding: 25px;
-    
-}
-
-.navigation{
-    height: 70px;
-    width: 100%;
+.header {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+    justify-content: center;
+    margin-bottom: 25px;
+    background-color: black;
 
-.nav{
-    padding: 10px 15px
-}
+    .name {
+        padding: 10px 100px;
+        font-size: large;
+        white-space: nowrap;
+    }
 }

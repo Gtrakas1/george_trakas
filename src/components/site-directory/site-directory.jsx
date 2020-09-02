@@ -7,12 +7,12 @@ class SiteDirectory extends React.Component {
 
 
     render() {
-        const { list } = this.props
+        const { site } = this.props
 
         return (
             <div className='site-container'>
                 {
-                    list.map(({ id, ...otherIconProps }) => (
+                    site.map(({ id, ...otherIconProps }) => (
                         <SiteItem
                             key={id}
                             {...otherIconProps} />
@@ -20,6 +20,8 @@ class SiteDirectory extends React.Component {
 
 
                 }
+
+
 
 
             </div>

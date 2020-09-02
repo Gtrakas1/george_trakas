@@ -1,0 +1,13 @@
+.proj-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    height: 300px;
+
+    .proj-image {}
+
+    .content {
+        .title {}
+    }
+}

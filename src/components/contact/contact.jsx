@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from '../../components/contact-form/contact-form.js'
+import Form from '../contact-form/contact-form.js'
 import './contact.scss'
 
 const Contact = () =>

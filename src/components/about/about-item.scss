@@ -1,0 +1,32 @@
+.about-item {
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    .image-content {
+        margin: 10px;
+        padding: 150px;
+        align-self: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .content {
+        text-align: left;
+
+        .about-title {
+            text-align: left;
+        }
+
+        .about-me {
+            margin: 10px;
+            padding: 25px;
+        }
+
+        .resume-icon {
+            text-align: center;
+        }
+    }
+}

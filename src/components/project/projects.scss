@@ -1,7 +1,10 @@
-.about-Container {
+.work-container {
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
 
+
+    .title {
+        text-align: left;
+    }
 }

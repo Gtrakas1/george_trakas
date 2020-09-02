@@ -28,10 +28,11 @@ $main-color: black;
             outline: none;
         }
 
+
     }
 
 
-    .form-input-label {
+    .form-label {
         color: $sub-color;
         font-size: 16px;
         font-weight: normal;
@@ -43,7 +44,6 @@ $main-color: black;
 
         &.shrink {
             @include shrinkLabel();
-
         }
     }
 }
