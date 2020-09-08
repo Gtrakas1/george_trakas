@@ -21,7 +21,7 @@ const SiteIcon = [
     {
         id: 2,
         title: 'resume',
-        imageUrl: 'https://i.ibb.co/HpR5zkb/resume.png',
+        imageUrl: 'https://i.ibb.co/TKHm0yj/resume.png',
         urlLink: 'https://github.com/Gtrakas1?tab=repositories'
     },
 

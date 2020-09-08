@@ -1,4 +1,4 @@
-body{
+body {
   font-family: 'Lemonada', cursive;
 }
 
@@ -6,4 +6,8 @@ a {
 
   text-decoration: none;
   color: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
 }
