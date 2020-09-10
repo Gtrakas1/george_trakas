@@ -5,7 +5,7 @@
     align-items: center;
 
     .image-content {
-        height: 400px;
+        height: 800px;
         width: 100%;
         object-fit: cover;
         overflow-wrap: normal;
@@ -18,14 +18,17 @@
     .content {
         text-align: left;
         padding: 25px;
-        background-color: blue;
+        background-color: aqua;
 
-        .about-title {
-            text-align: left;
+        .title {
+            text-align: center;
 
         }
 
-        .about-me {}
+        .about-me {
+            text-align: left;
+
+        }
 
         .resume-icon {
             text-align: center;

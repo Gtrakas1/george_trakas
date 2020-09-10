@@ -30,7 +30,7 @@ class Form extends Component {
                     <FormInput name='LastName' type='LastName' label='LastName' handleChange={this.handleChange} value={this.state.LastName} />
                     <FormInput name='Email' type='email' label='Email' handleChange={this.handleChange} value={this.state.Email} />
                     <button className='button'><a class="btn btn-primary"
-                        onclick="document.getElementById('contact-form').submit();">Send</a>submit</button>
+                        onClick="document.getElementById('contact-form').submit();">Send</a>submit</button>
                 </form>
             </div>
 

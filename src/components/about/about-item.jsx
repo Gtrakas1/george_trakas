@@ -1,5 +1,5 @@
 import React from 'react'
-import george from '../../image/facebook-profile.png'
+import landscape from '../../image/George-Landscape2-BW.jpg'
 import resume from '../../image/resume.png'
 import './about-item.scss'
 
@@ -7,12 +7,12 @@ const AboutItem = () => (
 
     <div className='about-item'>
         <div className='image-content' alt='facebook' style={{
-            backgroundImage: `url(${george})`,
+            backgroundImage: `url(${landscape})`,
 
 
         }} />
         <div className='content'>
-            <h2>About</h2>
+            <h2 className='title'>About</h2>
 
             <p className='about-me'>&emsp;&emsp; I am a Seneca Alumni from the summer of 2019 with an associate's degree in Computer Programming. I got into programming
             after deciding to switch a 20+ career in hospitality. A colleague of mine introduced me to programming and I enjoyed it so much

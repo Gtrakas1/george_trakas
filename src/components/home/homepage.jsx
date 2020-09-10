@@ -1,6 +1,6 @@
 import React from 'react'
 import './homepage.scss'
-import george from '../../image/facebook-profile.png'
+import george from '../../image/George-Portrait1-BW-lowres.jpg'
 import SiteDirectory from '../site-directory/site-directory'
 import SiteIcon from '../site-item/site_item.data'
 

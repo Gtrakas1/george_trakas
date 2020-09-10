@@ -3,11 +3,21 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    height: 300px;
 
-    .proj-image {}
+    .icon-image {
+        margin: 10px;
+        margin-bottom: 0px;
+        width: 400px;
+
+    }
 
     .content {
-        .title {}
+        .title {
+            margin: 10px;
+        }
+
+        .paragraph {
+            margin: 10px;
+        }
     }
 }
