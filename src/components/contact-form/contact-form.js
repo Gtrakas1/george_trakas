@@ -1,41 +1,66 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import './contact-form.scss'
 import FormInput from '../form-input/form-input.jsx'
+import { Axios, db } from '../../firebase/firebase-config'
+import './contact-form.scss'
 
-class Form extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            FirstName: '',
-            LastName: '',
-            Email: ''
-        }
+const Form = () => {
+    const [formData, setFormData] = useState({})
+
+    const updateInput = e => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        })
     }
-
-
-    handleChange = e => {
-        const { value, name } = e.target
-
-        this.setState({ [name]: value })
+    const handleSubmit = event => {
+        event.preventDefault()
+        sendEmail()
+        setFormData({
+            name: '',
+            email: '',
+            message: '',
+        })
     }
-
-    render() {
-        return (
-            <div className='form-container' >
-                <h2> Contact Me</h2>
-                <span>Thank you for taking the time to look through my portfolio.
-                I look forward to meeting with you.</span>
-                <form id='contact-form' action="mailto:gtrakas23@gmail.com" method="GET">
-                    <FormInput name='FirstName' type='FirstName' handleChange={this.handleChange} label='FirstName' value={this.state.FirstName} />
-                    <FormInput name='LastName' type='LastName' label='LastName' handleChange={this.handleChange} value={this.state.LastName} />
-                    <FormInput name='Email' type='email' label='Email' handleChange={this.handleChange} value={this.state.Email} />
-                    <button className='button'><a class="btn btn-primary"
-                        onClick="document.getElementById('contact-form').submit();">Send</a>submit</button>
-                </form>
-            </div>
-
+    const sendEmail = () => {
+        Axios.post(
+            'https://us-central1-emails-23fd7.cloudfunctions.net/submit',
+            formData
         )
+            .then(res => {
+                db.collection('emails').add({
+                    name: formData.name,
+                    email: formData.email,
+                    message: formData.message,
+                    time: new Date(),
+                })
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
+
+    return (
+        <div className='form-container' >
+            <h2> Contact Me</h2>
+            <span>Thank you for taking the time to look through my portfolio.
+                I look forward to meeting with you.</span>
+            <form id='contact-form' onSubmit={handleSubmit}>
+                <FormInput name='name' type='text' onChange={updateInput} label='Name' value={formData.name || ''} />
+                <FormInput name='email' type='email' onChange={updateInput} label='Email' value={formData.email || ''} />
+                <textarea
+                    type="text"
+                    name="message"
+                    placeholder="Message"
+                    onChange={updateInput}
+                    value={formData.message || ''}
+                ></textarea>
+                <button className='button' type='submit'>Submit</button>
+            </form>
+        </div>
+
+    )
+
 
 }
 export default Form

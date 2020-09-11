@@ -6,7 +6,7 @@ import ProjDir from '../proj-dir/proj-dir'
 const Work = () => (
 
     <div className='work-container'>
-        <h2 className='title'>Site Directory</h2>
+        <h2 className='title'>Projects</h2>
         <ProjDir project={ProjData} />
     </div>
 )
