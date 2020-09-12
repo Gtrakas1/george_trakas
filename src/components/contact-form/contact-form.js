@@ -43,12 +43,13 @@ const Form = () => {
     return (
         <div className='form-container' >
             <h2> Contact Me</h2>
-            <span>Thank you for taking the time to look through my portfolio.
-                I look forward to meeting with you.</span>
+            <p>If you have any questions or feedback about this portfolio. I would love to hear from you.<br />
+            Please fill out your info below and hit the submit button to email me. Thanks again for your time and consideration</p>
             <form id='contact-form' onSubmit={handleSubmit}>
                 <FormInput name='name' type='text' onChange={updateInput} label='Name' value={formData.name || ''} />
                 <FormInput name='email' type='email' onChange={updateInput} label='Email' value={formData.email || ''} />
                 <textarea
+                    className='text-area'
                     type="text"
                     name="message"
                     placeholder="Message"

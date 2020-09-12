@@ -18,7 +18,7 @@
     .content {
         text-align: left;
         padding: 25px;
-        background-color: dodgerblue;
+        background-color: powderblue;
 
         .title {
             text-align: center;
@@ -26,6 +26,7 @@
         }
 
         .about-me {
+            display: inline-block;
             text-align: left;
 
         }
