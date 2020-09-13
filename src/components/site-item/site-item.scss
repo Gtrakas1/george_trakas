@@ -1,29 +1,18 @@
 .site-item {
-    text-align: center;
-    flex-direction: column;
     margin: 20px 25px;
-    overflow: hidden;
-    margin-bottom: 8px;
 
+    &:hover {
+        transform: scale(2);
+        transition: transform 1s;
+    }
 
     .icon-image {
-
         height: 40px;
+
     }
 
     .content {
         height: 10px;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-        background-color: white;
-        position: absolute;
 
-        .title {
-            font-weight: bold;
-            margin-bottom: 6px;
-            font-size: 15px;
-            color: #4a4a4a;
-        }
     }
 }

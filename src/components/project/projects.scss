@@ -1,10 +1,14 @@
 .work-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 80px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-flow: column wrap;
+    overflow: hidden;
 
 
-    .title {
-        text-align: left;
+    .head-title {
+        font-size: 50px;
+        text-align: center;
+
     }
 }

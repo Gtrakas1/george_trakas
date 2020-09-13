@@ -21,18 +21,27 @@
         background-color: powderblue;
 
         .title {
+
             text-align: center;
 
         }
 
         .about-me {
-            display: inline-block;
-            text-align: left;
+            text-align: justify;
 
         }
 
         .resume-icon {
+            margin: 10px;
             text-align: center;
+
+            .icon-image {
+                &:hover {
+                    transform: scale(1.2);
+                    transition: transform 2s;
+                }
+
+            }
         }
     }
 }

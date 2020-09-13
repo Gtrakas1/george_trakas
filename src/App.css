@@ -5,9 +5,8 @@ body {
 p {
   font-family: "Noto Sans JP", sans-serif;
   font-family: "Roboto Mono", monospace;
-  white-space: pre-line;
-  vertical-align: bottom;
-
+  text-align: justify;
+  letter-spacing: -1px;
 }
 
 a {

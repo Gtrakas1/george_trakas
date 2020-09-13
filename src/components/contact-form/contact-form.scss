@@ -5,6 +5,13 @@
     justify-content: center;
     align-items: center;
 
+    .title {
+        margin: 10px;
+        font-size: 100px;
+        font-weight: normal;
+        border: none;
+        border-bottom: 1px solid silver;
+    }
 
     #contact-form {
         margin: 10px;
@@ -14,13 +21,14 @@
         justify-content: center;
         align-items: center;
         border-radius: 25px;
-        width: 600px;
+        width: 450px;
+
 
         .text-area {
             display: inline-block;
             margin: 10px;
             height: 250px;
-            width: 400px;
+            width: 300px;
 
         }
 
