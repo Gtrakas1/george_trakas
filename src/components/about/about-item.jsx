@@ -12,7 +12,6 @@ const AboutItem = () => (
 
         }} />
         <div className='content'>
-            <h2 className='title'>About</h2>
 
             <p className='about-me'>&emsp;&emsp; I am a Seneca College
             Alumni from the summer of 2019 with an associate's degree in Computer Programming. I got into programming
