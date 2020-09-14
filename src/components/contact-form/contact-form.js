@@ -34,8 +34,10 @@ const Form = () => {
                     message: formData.message,
                     time: new Date(),
                 })
+                alert('Message has been sent')
             })
             .catch(error => {
+                alert('Something went wrong')
                 console.log(error)
             })
     }
@@ -44,8 +46,8 @@ const Form = () => {
         <div className='form-container' >
             <h2 className='title'> Contact </h2>
             <form id='contact-form' onSubmit={handleSubmit}>
-                <FormInput name='name' type='text' onChange={updateInput} label='Name' value={formData.name || ''} />
-                <FormInput name='email' type='email' onChange={updateInput} label='Email' value={formData.email || ''} />
+                <FormInput name='name' type='text' onChange={updateInput} label='Name' value={formData.name || ''} required />
+                <FormInput name='email' type='email' onChange={updateInput} label='Email' value={formData.email || ''} required />
                 <textarea
                     className='text-area'
                     type="text"
@@ -54,7 +56,7 @@ const Form = () => {
                     onChange={updateInput}
                     value={formData.message || ''}
                 ></textarea>
-                <button className='button' type='submit'>Submit</button>
+                <button className='button' type='submit'>Send Email</button>
             </form>
         </div>
 

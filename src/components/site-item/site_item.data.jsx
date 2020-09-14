@@ -22,7 +22,7 @@ const SiteIcon = [
         id: 2,
         title: 'resume',
         imageUrl: 'https://i.ibb.co/TKHm0yj/resume.png',
-        urlLink: 'https://github.com/Gtrakas1?tab=repositories'
+        urlLink: 'https://drive.google.com/file/d/1OqG-Aqb25--ZFfadv_3MXqJjw587XIE4/view?usp=sharing'
     },
 
 
