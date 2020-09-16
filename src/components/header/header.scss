@@ -3,10 +3,10 @@
     justify-content: center;
     margin-bottom: 25px;
     background-color: black;
+    overflow: hidden;
 
     .name {
-        padding: 10px 100px;
         font-size: large;
-        white-space: nowrap;
+
     }
 }
