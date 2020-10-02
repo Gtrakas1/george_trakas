@@ -6,6 +6,7 @@ p {
   font-family: "Noto Sans JP", sans-serif;
   font-family: "Roboto Mono", monospace;
   text-align: justify;
+  text-justify: newspaper;
   letter-spacing: -1px;
 }
 
