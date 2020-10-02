@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/george_trakas/static/css/main.91355a86.chunk.css",
+    "main.js": "/george_trakas/static/js/main.2dc9effd.chunk.js",
+    "main.js.map": "/george_trakas/static/js/main.2dc9effd.chunk.js.map",
+    "runtime-main.js": "/george_trakas/static/js/runtime-main.73d87969.js",
+    "runtime-main.js.map": "/george_trakas/static/js/runtime-main.73d87969.js.map",
+    "static/js/2.af4fada0.chunk.js": "/george_trakas/static/js/2.af4fada0.chunk.js",
+    "static/js/2.af4fada0.chunk.js.map": "/george_trakas/static/js/2.af4fada0.chunk.js.map",
+    "index.html": "/george_trakas/index.html",
+    "precache-manifest.706912ca74fa0092922c460b78b6f24b.js": "/george_trakas/precache-manifest.706912ca74fa0092922c460b78b6f24b.js",
+    "service-worker.js": "/george_trakas/service-worker.js",
+    "static/css/main.91355a86.chunk.css.map": "/george_trakas/static/css/main.91355a86.chunk.css.map",
+    "static/js/2.af4fada0.chunk.js.LICENSE.txt": "/george_trakas/static/js/2.af4fada0.chunk.js.LICENSE.txt",
+    "static/media/George-Landscape2-BW.jpg": "/george_trakas/static/media/George-Landscape2-BW.d617c985.jpg",
+    "static/media/George-Portrait1-BW-lowres.jpg": "/george_trakas/static/media/George-Portrait1-BW-lowres.a4e1a46b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73d87969.js",
+    "static/js/2.af4fada0.chunk.js",
+    "static/css/main.91355a86.chunk.css",
+    "static/js/main.2dc9effd.chunk.js"
+  ]
+}
