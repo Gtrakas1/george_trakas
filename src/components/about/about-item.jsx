@@ -25,7 +25,7 @@ const AboutItem = () => (
 
             </p>
             <div className='resume-icon'>
-                <a target='_blank' rel="noopener noreferrer" className='site-Item' href='https://docs.google.com/document/d/e/2PACX-1vSbGe3JE_YeMiXw-mcelCRcW-rp-4f-bBepOSs4lCZ2Ein3pC-ULcmHtop7opLlSg/pub?embedded=true'>
+                <a target='_blank' rel="noopener noreferrer" className='site-Item' href='https://drive.google.com/file/d/1GsN_7dmbNpwxrFYwGmMCANbte5Co8CpD/view'>
                     <img className='icon-image'
                         src={resume}
                         alt='resume'

@@ -22,7 +22,7 @@ const SiteIcon = [
         id: 2,
         title: 'resume',
         imageUrl: 'https://i.ibb.co/TKHm0yj/resume.png',
-        urlLink: 'https://drive.google.com/file/d/1yBakbyB62TqvwEeyMsCKyUt-BpTB7eMl/view?usp=sharing'
+        urlLink: 'https://drive.google.com/file/d/1GsN_7dmbNpwxrFYwGmMCANbte5Co8CpD/view'
     },
 
 
