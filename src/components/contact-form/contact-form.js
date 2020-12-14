@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './contact-form.scss'
 import FormInput from '../form-input/form-input.jsx'
-import { Axios, db } from '../../firebase/firebase-config'
 import './contact-form.scss'
+import emailjs, { init } from 'emailjs-com'
 
 const Form = () => {
     const [formData, setFormData] = useState({})
@@ -15,31 +15,24 @@ const Form = () => {
     }
     const handleSubmit = event => {
         event.preventDefault()
-        sendEmail()
+        const templatedId = 'contact_form'
+        sendFeedback(templatedId, { from_name: formData.name, user_email: formData.email, message: formData.message },)
         setFormData({
             name: '',
             email: '',
             message: '',
         })
     }
-    const sendEmail = () => {
-        Axios.post(
-            'https://us-central1-emails-23fd7.cloudfunctions.net/submit',
-            formData
-        )
-            .then(res => {
-                db.collection('emails').add({
-                    name: formData.name,
-                    email: formData.email,
-                    message: formData.message,
-                    time: new Date(),
-                })
-                alert('Message has been sent')
-            })
-            .catch(error => {
-                alert('Something went wrong')
-                console.log(error)
-            })
+
+    const sendFeedback = (templatedId, userInfo) => {
+        emailjs.send(
+            'service_jvshe3e', templatedId,
+            userInfo, init('user_dBB70t9dgcry8XKyzTLgY')
+        ).then(response => {
+            alert('Email sent successfully', response)
+        }).catch(err => {
+            console.log('Something went wrong', err)
+        })
     }
 
     return (
