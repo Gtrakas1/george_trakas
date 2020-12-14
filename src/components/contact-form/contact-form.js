@@ -15,7 +15,7 @@ const Form = () => {
     }
     const handleSubmit = event => {
         event.preventDefault()
-        const templatedId = 'contact_form'
+        const templatedId = process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID
         sendFeedback(templatedId, { from_name: formData.name, user_email: formData.email, message: formData.message },)
         setFormData({
             name: '',
@@ -26,8 +26,8 @@ const Form = () => {
 
     const sendFeedback = (templatedId, userInfo) => {
         emailjs.send(
-            'service_jvshe3e', templatedId,
-            userInfo, init('user_dBB70t9dgcry8XKyzTLgY')
+            process.env.REACT_APP_EMAIL_JS_SERVICE_ID, templatedId,
+            userInfo, init(process.env.REACT_APP_EMAIL_JS_USER_ID)
         ).then(response => {
             alert('Email sent successfully', response)
         }).catch(err => {
